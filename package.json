@@ -1,0 +1,32 @@
+{
+  "name": "untab",
+  "version": "1.0.0",
+  "description": "Remove whitespace at the start of every line in a multiline template string",
+  "main": "index.js",
+  "scripts": {
+    "test": "node node_modules/mocha/bin/_mocha test/*.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mariusGundersen/untab.git"
+  },
+  "keywords": [
+    "es6",
+    "multiline",
+    "multiline",
+    "template",
+    "string",
+    "whitespace",
+    "indent"
+  ],
+  "author": "Marius Gundersen",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/mariusGundersen/untab/issues"
+  },
+  "homepage": "https://github.com/mariusGundersen/untab#readme",
+  "devDependencies": {
+    "chai": "^3.5.0",
+    "mocha": "^2.4.5"
+  }
+}
