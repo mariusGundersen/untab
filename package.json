@@ -1,6 +1,6 @@
 {
   "name": "untab",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Remove whitespace at the start of every line in a multiline template string",
   "main": "index.js",
   "scripts": {
