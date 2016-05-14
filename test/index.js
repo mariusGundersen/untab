@@ -48,4 +48,18 @@ describe("untab", function(){
       test
     test2`.should.equal('test\ntest2');
   });
+
+  it("should keep trailing newline character", function(){
+    u`
+      test
+      test2
+`.should.equal('test\ntest2\n');
+  });
+
+  it("should strip whitespace before a trailing newline character", function(){
+    u`
+      test
+      test2
+    `.should.equal('test\ntest2\n');
+  });
 });
