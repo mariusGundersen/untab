@@ -9,10 +9,11 @@
 ## Usage
 
 ```js
+const fs = require('fs');
 const u = require('untab');
 
-function renderHtml(res, model){
-  res.write(untab`
+function renderHtml(name, model){
+  fs.writeFileSync(name, u`
     <!doctype html>
     <html>
       <head>
@@ -29,4 +30,4 @@ function renderHtml(res, model){
 
 ## Description
 
-untab will remove the leading whitespace characters from a template string. It will look at the first line and remove as many leading whitespace characters as that line has. This preserves the indentation on the following lines.
+untab will remove the leading whitespace characters from a template string. It will look at the first line and remove as many leading whitespace characters as that line has. This preserves the indentation on the following lines, which is useful when you want to write for example a config file to the filesystem.
